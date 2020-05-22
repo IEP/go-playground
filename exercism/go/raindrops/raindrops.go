@@ -3,7 +3,6 @@
 package raindrops
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -13,17 +12,17 @@ func Convert(num int) string {
 
 	// If num has 3 as a factor, add "Pling" sound.
 	if num%3 == 0 {
-		sound = fmt.Sprintf("%s%s", sound, "Pling")
+		sound += "Pling"
 	}
 
 	// If num has 5 as a factor, add "Plang" sound.
 	if num%5 == 0 {
-		sound = fmt.Sprintf("%s%s", sound, "Plang")
+		sound += "Plang"
 	}
 
 	// If num has 7 as a factor, add "Plong" sound.
 	if num%7 == 0 {
-		sound = fmt.Sprintf("%s%s", sound, "Plong")
+		sound += "Plong"
 	}
 
 	// If num does not have any 3, 5, 7 as a factor the sound will be the num
